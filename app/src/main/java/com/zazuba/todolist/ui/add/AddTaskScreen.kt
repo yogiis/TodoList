@@ -49,7 +49,8 @@ fun AddTaskScreen (
                     }
                 },
                 actions = {
-                    TextButton(onClick = {
+                    TextButton(
+                        onClick = {
                         val newTask = Task(
                             id = (viewModel.tasks.size + 1).toString(),
                             title = taskTitle,

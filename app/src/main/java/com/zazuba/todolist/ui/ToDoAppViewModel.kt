@@ -24,5 +24,8 @@ class ToDoAppViewModel: ViewModel(){
     fun getTaskById(taskId: String?): Task?{
         return _tasks.find { it.id == taskId }
     }
+    fun clearTasks() {
+        _tasks.clear()
+    }
 
 }
